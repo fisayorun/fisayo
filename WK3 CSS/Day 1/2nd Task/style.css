@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px minmax(300px, auto); 70px;
+    grid-gap: 3px;
+}
+
+.header {
+    grid-column: 1/ span 4;
+    background-color: darksalmon;
+}
+
+.leftbar {
+    grid-column: 1/ span 1;
+    background-color: aquamarine;
+}
+
+.content {
+    grid-column: 2/ span 2;
+    background-color: khaki;
+}
+
+.rightbar {
+    grid-column: 4/ span 1;
+    background-color: deepskyblue;
+}
+
+.footer {
+    grid-column: 1/ span 4;
+    background-color: mediumpurple;
+}

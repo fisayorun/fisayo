@@ -1,0 +1,14 @@
+#navbar {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: bisque;
+    position: sticky;
+    top: 0;
+}
+
+a {
+    color: brown;
+    background-color: darkgrey;
+}

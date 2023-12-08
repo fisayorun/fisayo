@@ -1,0 +1,16 @@
+h2 {
+    color: red;
+}
+
+.class {
+    color: blue;
+    font-family: 'ABeeZee';font-size: 22px;
+}
+
+#id {
+    color: gold;
+}
+
+span {
+    color: #a52a2a;
+}

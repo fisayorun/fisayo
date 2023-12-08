@@ -1,0 +1,89 @@
+/* Font Import and Base Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Box-Sizing to Border-Box */
+/* This includes padding and border in the H and W of the element */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    border: 3px solid black;
+    height: 80vh;
+    border-radius: 10px;
+    /* overflow hides the any elements that overflow the container */
+    overflow: hidden;
+}
+
+/* Flexbox Reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* Flexbox Diagram: https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg */
+
+/* Colours for each box */
+
+
+.box1 {
+    background: #ff4757;
+}
+
+.box2 {
+    background: #1e90ff;
+}
+
+.box3 {
+    background: #2ed573;
+}
+
+/* Write Flexbox Code Below: */
+.container {
+    display: flex;
+    
+    /* Flex-Direction controls the main axis of your flexbox */
+    /* Row - Horizontal. Column - Vertical */
+    /* flex-direction: column; */
+
+    /* flex-wrap - dictates whether you would like elements to wrap onto */
+    /* Can also dictate the direction of the wrap */
+    /* flex-wrap: wrap; */
+
+    
+    /* justify-content: space-between;
+
+    align-items: stretch; */
+
+    /* Align-Content is very similar to justify-content */
+    /* However only takes effect if elements are wrapped across more  */
+    /* align-content: flex-start; */
+}
+
+.box1 {
+    flex-basis: 600px;
+    /* flex-grow: 2; */
+    flex-shrink: 5;
+}
+
+.box2 {
+    flex-basis: 200px;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+}
+
+.box3 {
+    flex-basis: 200px;
+    /* flex-grow: 0; */
+    flex-shrink: 1;
+}

@@ -1,0 +1,27 @@
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: move;
+    animation-duration: 2s;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@keyframes move {
+    from {
+        background-color: green;
+        left: 0px;
+    }
+    to {
+        background-color: silver;
+        left: 200px;
+    }
+    from {
+        left: 200px;
+    }
+    to {
+        top: 200px;
+    }
+    
+}

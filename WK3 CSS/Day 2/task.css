@@ -1,0 +1,32 @@
+body {
+    background-color: coral;
+ }
+
+ div {
+    float: left;
+ }
+
+ .div1 {
+    background-color: bisque;
+    height: 50%;
+    width: 50%;
+ }
+
+ .div2 {
+    background-color: goldenrod;
+    height: 50px;
+    width: 50%;
+ }
+
+ @media (min-width:600px) and (max-width: 800px)
+ {
+    body {
+        background-color: blueviolet;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    div {
+        clear: both;
+    }
+ }

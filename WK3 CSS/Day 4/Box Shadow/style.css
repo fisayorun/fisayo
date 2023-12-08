@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.div1 {
+    /* margin: 100px 200px 50px 30px; top right bottom left */
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    background-color: aquamarine;
+    /* box-shadow: h-offset v-offset / blur, spread, color*, inset; * required on Safari 
+    inset: making shadow inside box*/
+    box-shadow: 5px 5px 10px 5px red inset; 
+    
+    transition: box-shadow 2s;
+}
+
+.div1:hover {
+    box-shadow: 
+    10px 10px 10px #000, 
+    inset 0 0 10px #000;
+}
+
+p {
+    text-shadow: 1px 1px 2px red;
+    font-size: 40px;
+}
+
+.container .firstdiv {
+    background-color: blueviolet;
+    height: 40px;
+    z-index: 4;
+    position: relative;;
+    top: 60px;
+}
+
+.container .seconddiv {
+    background-color: gray;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    z-index: -1;
+}
+
+.container .thirddiv {
+    background-color: black;
+    height: 40px;
+    z-index: 1;
+}

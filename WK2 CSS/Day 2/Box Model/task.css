@@ -1,0 +1,24 @@
+* {
+    background-color: peachpuff;
+}
+
+a {
+    color: coral;
+    background-color: navy;
+}
+
+.tagline {
+    font-family: 'Open Sans', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Vina Sans', sans-serif;
+}
+
+
+span {
+    display: inline;
+    border: 4px solid;
+}
+
+img {
+    width: 1200px;
+}

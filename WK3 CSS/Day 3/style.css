@@ -1,0 +1,90 @@
+/* 
+What is Media Query?
+-- Making website responsive by resizing element widths etc of the viewport eg. @media ( */
+
+:root {
+    --mainColor: gold; /* Global Variable */
+    width: 200px;
+}
+
+.h1 {
+    --size: 40px; /* Local Variable */
+    background-color: var(--mainColor)
+}
+
+.p1 {
+    color: var(--mainColor);
+}
+
+.div1 {
+    --border: 5px solid;
+    --height: 200px;
+    --width: 200px
+    background-color: var(--mainColor);
+    height: var(--height);
+    width: var(--width);
+    border: var(--border); red;
+}
+
+/* Animation in CSS */
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: move;
+    animation-duration: 2s;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@keyframes move {
+    from {
+        background-color: brown;
+        left: 0px;
+    }
+    to {
+        background-color: blueviolet;
+        left: 200px;
+    }
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: square;
+    animation-duration: 3s;
+    position: relative;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes square {
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 200px;
+        top: 0;
+        background-color: blueviolet;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        background-color: brown;
+    }
+    75%{
+        left: 0px;
+        top: 200px;
+        background-color: aqua;
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background-color: red;
+    }
+}
+
+.div3:hover
